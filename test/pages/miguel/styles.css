@@ -19,7 +19,7 @@ body {
 
 /* Top Bar */
 .top-bar {
-    background: linear-gradient(135deg, #fc7e89, #6cd1f0);
+    background: linear-gradient(135deg, #fc7e89, #fc7e89);
     padding: 8px 0;
     text-align: center;
     font-size: 14px;
@@ -83,7 +83,9 @@ body {
 }
 
 .search-input {
-    width: 100%;
+    position: relative;
+    right: 210px;
+    width: 170%;
     padding: 12px 50px 12px 20px;
     border: 2px solid #f5c6cb;
     border-radius: 25px;
@@ -98,7 +100,7 @@ body {
 
 .search-btn {
     position: absolute;
-    right: 5px;
+    right: 85px;
     top: 50%;
     transform: translateY(-50%);
     background: #f8d7da;
@@ -202,8 +204,8 @@ body {
 
 /* Navigation Bar */
 .navigation-bar {
-    background: linear-gradient(135deg, #fc7e89, #6cd1f0);
-    border-top: 1px solid #f5c6cb;
+    background: linear-gradient(135deg, #6cd1f0, #6cd1f0);
+    border-top: 1px solid #6cd1f0;
 }
 
 .nav-content {
