@@ -19,7 +19,7 @@ body {
 
 /* Top Bar */
 .top-bar {
-    background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+    background: linear-gradient(135deg, #fc7e89, #6cd1f0);
     padding: 8px 0;
     text-align: center;
     font-size: 14px;
@@ -85,7 +85,7 @@ body {
 .search-input {
     width: 100%;
     padding: 12px 50px 12px 20px;
-    border: 2px solid #f8d7da;
+    border: 2px solid #f5c6cb;
     border-radius: 25px;
     font-size: 14px;
     outline: none;
@@ -202,7 +202,7 @@ body {
 
 /* Navigation Bar */
 .navigation-bar {
-    background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+    background: linear-gradient(135deg, #fc7e89, #6cd1f0);
     border-top: 1px solid #f5c6cb;
 }
 
@@ -411,69 +411,69 @@ body {
     .container {
         padding: 0 15px;
     }
-    
+
     .top-bar {
         font-size: 12px;
         padding: 6px 0;
     }
-    
+
     .header-content {
         padding: 10px 0;
         flex-wrap: wrap;
     }
-    
+
     .logo {
         order: 1;
         flex: 0 0 auto;
     }
-    
+
     .logo h1 {
         font-size: 22px;
     }
-    
+
     .logo span {
         font-size: 10px;
     }
-    
+
     .search-container {
         order: 3;
         width: 100%;
         margin: 10px 0 0 0;
         max-width: none;
     }
-    
+
     .header-actions {
         order: 2;
         gap: 15px;
     }
-    
+
     .action-item span {
         font-size: 10px;
     }
-    
+
     .mobile-menu-toggle {
         display: none;
     }
-    
+
     .navigation-bar {
         padding: 8px 0;
     }
-    
+
     .nav-content {
         flex-wrap: wrap;
         gap: 15px;
     }
-    
+
     .categories-btn {
         padding: 6px 12px;
         font-size: 12px;
     }
-    
+
     .nav-links {
         gap: 15px;
         flex-wrap: wrap;
     }
-    
+
     .nav-links li a {
         font-size: 12px;
     }
@@ -483,12 +483,12 @@ body {
     .header-actions .action-item:not(.cart) {
         display: none;
     }
-    
+
     .mobile-menu-toggle {
         display: flex;
         order: 2;
     }
-    
+
     .search-container {
         display: none;
     }
@@ -498,11 +498,11 @@ body {
     .logo h1 {
         font-size: 18px;
     }
-    
+
     .logo span {
         font-size: 9px;
     }
-    
+
     .mobile-menu {
         width: 280px;
     }
@@ -514,6 +514,7 @@ body {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -568,4 +569,3 @@ body {
 .mobile-menu::-webkit-scrollbar-thumb:hover {
     background: #f5c6cb;
 }
-
