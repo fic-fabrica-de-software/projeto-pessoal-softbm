@@ -18,10 +18,25 @@
 }
 
 .texto1 {
-    margin-left: 250px;
-    margin-bottom: 120px;
+    position: relative;
+    bottom: 80px;
+    margin-left: 260px;
 }
 
 .texto2 {
+    position: relative;
+    bottom: 210px;
     margin-left: 570px;
+}
+
+.texto3 {
+    position: relative;
+    bottom: 326px;
+    margin-left: 800px;
+}
+
+.texto4 {
+    position: relative;
+    bottom: 511px;
+    margin-left: 990px;
 }
