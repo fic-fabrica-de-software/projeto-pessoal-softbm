@@ -91,7 +91,7 @@ section {
 .navigation label{
     width: 20px;
     height: 20px;
-    background-color: #ccc;
+    background-color:rgb(236,162,179) ;
     border-radius: 50%;
     margin: 10px;
     cursor: pointer;
