@@ -4,7 +4,7 @@
 }
 
 .section {
-    margin-top: 480px;
+    margin-top: 430px;
     background-color: rgb(236,162,179);
     width: 100%;
     height: 460px;
@@ -38,12 +38,12 @@
 
 .texto4 {
     position: relative;
-    bottom: 511px;
+    bottom: 535px;
     margin-left: 990px;
 }
 .texto5{
     position: relative;
-    bottom: 800px;
+    bottom: 890px;
     margin-left: 1600px;
 
 }
