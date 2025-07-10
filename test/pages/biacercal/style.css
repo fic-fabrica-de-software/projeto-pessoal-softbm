@@ -9,7 +9,7 @@ h1{
     width: 400px;
     height: 400px;
     border-radius: 18px;
-    box-shadow: 20px 20px 20px 10px rgba(#000000);
+    box-shadow: 2px 2px 15px 7px rgb(236, 162, 179);
 }
 .fotos1{
     background-color: #6cd1f0;
@@ -24,6 +24,7 @@ h1{
     border-radius: 18px;
     margin-left: 820px;
     margin-top: -15px;
+    box-shadow: 2px 2px 15px 7px rgb(236, 162, 179);
    
 }
 .fotos3{
@@ -44,6 +45,7 @@ h1{
     margin-left: 425px;
     position: relative;
     bottom: 1612px;
+    
    
 }
 .fotos5{
@@ -54,5 +56,6 @@ h1{
  margin-left: 1690px;
     position: relative;
     bottom: 1999px;
+    box-shadow: 2px 2px 15px 7px rgb(236, 162, 179);
    
 }
