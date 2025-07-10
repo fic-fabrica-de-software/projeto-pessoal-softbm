@@ -102,3 +102,26 @@ section {
 #slide13:checked~.slides .slide:nth-child(3) {
     display: block;
 }
+
+/*Carrousel*/
+
+.carrousel-sections {
+    display: flex;
+    gap: 20px;
+}
+
+.carrousel-photos {
+    margin-left: 40px;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 100px;
+}
+
+.carrousel-photos img {
+    width: 100%;
+}
+
+.carrousel-photos p {
+    
+}
