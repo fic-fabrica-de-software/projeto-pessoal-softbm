@@ -227,3 +227,45 @@ section {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/*Seção abaixo do carrousel de marcas*/
+
+.tshirt-sections {
+    position: relative;
+    bottom: 870px;
+    display: flex;
+    margin-left: 55px;
+    gap: 20px;
+}
+
+.tshirt-sections a {
+    text-decoration: none;
+    color: black;
+}
+
+.tshirt-photos {
+    margin-left: 40px;
+    width: 280px;
+    height: 220px;
+}
+
+.tshirt-photos img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.tshirt-photos p {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.tshirt-photos span {
+ position: relative;
+ top: 20px;
+ margin-left: 104px;
+ text-decoration: none;
+}
+
+/*Seção abaixo do carrousel de marcas*/
