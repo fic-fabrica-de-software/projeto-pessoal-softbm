@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/templates/style_header.css"> <!--Por equanto deixar linkado /CSS do Header-->
+    <title>&Camisa Adidas Preta - Bia Fashion Kids/title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: white;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .breadcrumb nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: #e91e63;
+        }
+
+        .breadcrumb span {
+            color: #999;
+        }
+
+        /* Produto Principal */
+        .produto-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        /* Galeria de Imagens */
+        .galeria-imagens {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .imagem-principal {
+            width: 100%;
+            height: 500px;
+            background: #f8f8f8;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #eee;
+        }
+
+        .imagem-principal img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .miniaturas {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+
+        .miniatura {
+            width: 80px;
+            height: 80px;
+            background: #f8f8f8;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .miniatura.ativa {
+            border-color: #e91e63;
+        }
+
+        .miniatura img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        /* Informações do Produto */
+        .info-produto {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .titulo-produto {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            line-height: 1.3;
+        }
+
+        .codigo-produto {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .avaliacao {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .estrelas {
+            color: #ffa500;
+            font-size: 18px;
+        }
+
+        .nota {
+            background: #e91e63;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Preços */
+        .precos {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .preco-original {
+            color: #999;
+            text-decoration: line-through;
+            font-size: 16px;
+        }
+
+        .preco-atual {
+            font-size: 32px;
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        .desconto {
+            background: #e91e63;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            align-self: flex-start;
+        }
+
+        .parcelamento {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Seleções */
+        .selecoes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .selecao-grupo {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .selecao-titulo {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .opcao {
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .opcao:hover {
+            border-color: #e91e63;
+        }
+
+        .opcao.selecionada {
+            border-color: #e91e63;
+            background: #e91e63;
+            color: white;
+        }
+
+        .opcao.indisponivel {
+            background: #f5f5f5;
+            color: #999;
+            cursor: not-allowed;
+        }
+
+        /* Botões de Ação */
+        .acoes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .botoes-secundarios {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .btn-primario {
+            background: #e91e63;
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+        }
+
+        .btn-primario:hover {
+            background: #c2185b;
+        }
+
+        .btn-secundario {
+            background: white;
+            color: #e91e63;
+            border: 2px solid #e91e63;
+            flex: 1;
+        }
+
+        .btn-secundario:hover {
+            background: #e91e63;
+            color: white;
+        }
+
+        .btn-favorito {
+            background: white;
+            color: #666;
+            border: 2px solid #ddd;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-favorito:hover {
+            border-color: #e91e63;
+            color: #e91e63;
+        }
+
+        /* Seção de Descrição */
+        .descricao-produto {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .descricao-titulo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .descricao-conteudo {
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .descricao-conteudo h3 {
+            color: #333;
+            margin: 20px 0 10px 0;
+            font-size: 18px;
+        }
+
+        .descricao-conteudo ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .descricao-conteudo li {
+            margin-bottom: 5px;
+        }
+
+        /* Avaliações */
+        .avaliacoes-secao {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .avaliacoes-titulo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .avaliacao-resumo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .nota-grande {
+            font-size: 48px;
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        .avaliacao-detalhes {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .produto-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .titulo-produto {
+                font-size: 24px;
+            }
+
+            .preco-atual {
+                font-size: 28px;
+            }
+
+            .botoes-secundarios {
+                flex-direction: column;
+            }
+
+            .btn-favorito {
+                width: 100%;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Miguel (Ficar com a parte de chamar com PHP o Header e o Footer automaticamente)-->
+    <!--Parte de cima contendo novidades/promoções-->
+    <div class="top-bar">
+        <div class="container">
+            <p>Aceitamos pagamento via <i class="fa-brands fa-pix"></i> pix | Compre parcelado e sem juros!</p>
+        </div>
+    </div>
+    <!--Parte do Header do site // Fixo!-->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!--Logo da loja-->
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="/src/images/98368e1a-b1a8-4dfd-bffa-786a1f87a1f4.png">
+                    </a>
+                </div>
+
+                <!--Seções-->
+                <div class="sections-content">
+                    <ul>
+                        <li><a href="/pages/promo.html"></a>promos</li>
+                        <li><a href=""></a>feminino</li>
+                        <li><a href=""></a>masculino</li>
+                        <li><a href=""></a>quentinhos</li>
+                        <li><a href=""></a>fresquinhos</li>
+                        <li><a href=""></a>acessórios</li>
+                        <li><a href=""></a>marcas</li>
+                    </ul>
+                </div>
+
+                <!--Seção de pesquisa-->
+                <div class="search-container">
+                    <input type="text" placeholder="Digite o que você procura" class="search-input"
+                        style="placeholder {color: black;}">
+                </div>
+
+                <div class="sections-content-end">
+                    <ul>
+                        <li><a href=""></a>entrar</li>
+                    </ul>
+                </div>
+
+                <div class="header-actions">
+                    <i class="fa fa-cloud"></i>
+                </div>
+
+            </div>
+        </div>
+    </header>
+        <!-- Produto Principal -->
+        <div class="produto-container">
+            <!-- Galeria de Imagens -->
+            <div class="galeria-imagens">
+                <div class="imagem-principal">
+                    <img src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg" alt="Produto Principal">
+                </div>
+                <div class="miniaturas">
+                    <div class="miniatura ativa">
+                        <img src="https://via.placeholder.com/80x80/f0f0f0/666?text=1" alt="Miniatura 1">
+                    </div>
+                    <div class="miniatura">
+                        <img src="https://via.placeholder.com/80x80/f0f0f0/666?text=2" alt="Miniatura 2">
+                    </div>
+                    <div class="miniatura">
+                        <img src="https://via.placeholder.com/80x80/f0f0f0/666?text=3" alt="Miniatura 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações do Produto -->
+            <div class="info-produto">
+                <div>
+                    <h1 class="titulo-produto">Bermuda Jorts Super Baggy em Jeans com Estampa Cordão e Puídos Azul</h1>
+                    <p class="codigo-produto">Código: 929023640</p>
+                </div>
+
+                <div class="avaliacao">
+                    <span class="estrelas">★★★★☆</span>
+                    <span class="nota">4.4</span>
+                </div>
+
+                <div class="precos">
+                    <span class="preco-original">De R$ 159,90</span>
+                    <span class="preco-atual">por R$ 95,90</span>
+                    <span class="desconto">- 40%</span>
+                    <span class="parcelamento">3x de R$ 31,97* sem juros no Cartão Renner</span>
+                </div>
+
+                <div class="selecoes">
+                    <div class="selecao-grupo">
+                        <span class="selecao-titulo">Cor: Azul</span>
+                        <div class="opcoes">
+                            <div class="opcao selecionada" style="background-color: #4a90e2; color: white;">Azul</div>
+                        </div>
+                    </div>
+
+                    <div class="selecao-grupo">
+                        <span class="selecao-titulo">Tamanho</span>
+                        <div class="opcoes">
+                            <div class="opcao">36</div>
+                            <div class="opcao">38</div>
+                            <div class="opcao selecionada">40</div>
+                            <div class="opcao">42</div>
+                            <div class="opcao">44</div>
+                            <div class="opcao">46</div>
+                            <div class="opcao">48</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acoes">
+                    <div class="botoes-secundarios">
+                        <button class="btn btn-secundario">Provador Virtual</button>
+                        <button class="btn btn-secundario">Tabela de Medidas</button>
+                        <button class="btn btn-favorito">♡</button>
+                    </div>
+                    <button class="btn btn-primario">COMPRAR</button>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <p style="font-size: 14px; color: #666;">
+                        <strong>Vendido e Entregue por</strong><br>
+                        <img src="https://via.placeholder.com/100x30/e91e63/white?text=Blue+Steel" alt="Blue Steel" style="margin-top: 5px;">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descrição do Produto -->
+        <div class="descricao-produto">
+            <h2 class="descricao-titulo">Descrição</h2>
+            <div class="descricao-conteudo">
+                <p><strong>Código:</strong> 929023640</p>
+                <p><strong>Bermuda Jorts Super Baggy em Jeans com Estampa Cordão e Puídos</strong></p>
+                
+                <p>Bermuda masculina jorts super baggy, em jeans mais sustentável. Peça com fechamento tradicional, cós passante, e caimento mais largo. Em seu diferencial com estampa de cordão na lateral.</p>
+
+                <ul>
+                    <li>Bermuda masculina</li>
+                    <li>Modelo jorts super baggy</li>
+                    <li>Fechamento tradicional</li>
+                    <li>Cós com passante</li>
+                    <li>Estampa de cordão</li>
+                    <li>Puídos</li>
+                    <li>Bolsos</li>
+                    <li>Processo mais sustentável: Bci boas práticas ambientais</li>
+                    <li>Material mais sustentável: Algodão Certificado</li>
+                    <li>Tecido: Jeans</li>
+                </ul>
+
+                <h3>Versatilidade do fit</h3>
+                <p>O termo <em>jorts</em> vem da fusão de <em>jeans mais shorts</em> e trata-se de uma bermuda um pouco mais comprida e ampla que o short tradicional, podendo passar da linha dos joelhos. Aquele clássico bermudão despojado, sabe? Ele voltou COM TUDO! Apesar do nome desta peça fazer referência ao jeans, o jorts pode ser confeccionado também em outros tipos de tecidos, malhas e aparecer até mesmo em cortes de alfaiataria.</p>
+
+                <h3>O tecido que amamos</h3>
+                <p>O Jeans é o nosso amado tecido do dia a dia. A confecção a partir do algodão índigo trançado garante uma aparência inconfundível. Por ser um material encorpado, modela o corpo e ainda resiste bem aos desafios do cotidiano.</p>
+
+                <h3>Detalhes</h3>
+                <ul>
+                    <li><strong>Marca:</strong> Blue Steel</li>
+                    <li><strong>Coleção:</strong> Outono/Inverno 2025</li>
+                </ul>
+
+                <h3>Medidas do Modelo:</h3>
+                <ul>
+                    <li>Altura: 1,86 m</li>
+                    <li>Tórax: 93 cm</li>
+                    <li>Modelo veste tamanho: M/40</li>
+                </ul>
+
+                <h3>Composição</h3>
+                <ul>
+                    <li>100.0% Algodão</li>
+                    <li>Forro De Bolso: 50.0% Algodão 50.0% Poliéster</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Avaliações -->
+        <div class="avaliacoes-secao">
+            <h2 class="avaliacoes-titulo">Avaliações</h2>
+            <div class="avaliacao-resumo">
+                <span class="nota-grande">4.4</span>
+                <div class="avaliacao-detalhes">
+                    <div class="estrelas">★★★★☆</div>
+                    <p>Essa é a nota que este produto recebeu dos nossos clientes.</p>
+                    <p><strong>Média de 9 avaliações</strong></p>
+                </div>
+            </div>
+            <button class="btn btn-secundario">Mostrar comentários</button>
+        </div>
+    </div>
+
+    <script>
+        // Funcionalidade para trocar imagem principal
+        document.querySelectorAll('.miniatura').forEach(miniatura => {
+            miniatura.addEventListener('click', function() {
+                // Remove classe ativa de todas as miniaturas
+                document.querySelectorAll('.miniatura').forEach(m => m.classList.remove('ativa'));
+                
+                // Adiciona classe ativa na miniatura clicada
+                this.classList.add('ativa');
+                
+                // Aqui você pode adicionar lógica para trocar a imagem principal
+                console.log('Miniatura clicada');
+            });
+        });
+
+        // Funcionalidade para seleção de tamanho
+        document.querySelectorAll('.opcao').forEach(opcao => {
+            opcao.addEventListener('click', function() {
+                // Remove seleção anterior do mesmo grupo
+                const grupo = this.parentElement;
+                grupo.querySelectorAll('.opcao').forEach(o => o.classList.remove('selecionada'));
+                
+                // Adiciona seleção na opção clicada
+                this.classList.add('selecionada');
+            });
+        });
+
+        // Funcionalidade do botão favorito
+        document.querySelector('.btn-favorito').addEventListener('click', function() {
+            if (this.innerHTML === '♡') {
+                this.innerHTML = '♥';
+                this.style.color = '#e91e63';
+            } else {
+                this.innerHTML = '♡';
+                this.style.color = '#666';
+            }
+        });
+
+        // Funcionalidade do botão comprar
+        document.querySelector('.btn-primario').addEventListener('click', function() {
+            alert('Produto adicionado ao carrinho!');
+        });
+    </script>
+</body>
+</html>
+
