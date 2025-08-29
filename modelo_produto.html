@@ -602,67 +602,60 @@
             </ul>
         </div>
     </div>
-    <div class="footer-div" style="position: relative;">
-        <div class="section">
-            <div class="imagem1">
-                <img src="/src/images/logo_bfk.JPG" alt="logo Bia Fashion Kids">
-            </div>
-            <div class="texto1">
+   
+    <footer class="footer-div">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="/src/images/logo_bfk.JPG" alt="logo Bia Fashion Kids" class="footer-logo">
                 <h3>Venha nos fazer uma visita!</h3>
-                <p>Rua Laura Auler, 164
-                    <br>
-                    Joinville
-                    <br><br> biafashionkids@gmail.com
+                <p>
+                    Rua Laura Auler, 164<br>
+                    Joinville<br>
+                    <a href="mailto:biafashionkids@gmail.com">biafashionkids@gmail.com</a>
                 </p>
             </div>
-            <div class="texto2">
+            <div class="footer-col">
                 <h3>Nos Contate!</h3>
-                <p>Brasil
-                    <br><br>
-                    +55 (47) 3017-4337
+                <p>
+                    Brasil<br>
+                    <a href="tel:+554730174337">+55 (47) 3017-4337</a>
                 </p>
             </div>
-            <div class="texto3">
+            <div class="footer-col">
                 <h3>Companhia</h3>
-                <p>Sobre Nós
-                    <br><br>
-                    Linha do Tempo
-                    <br><br>
-                    Marcas
-                    <br><br>
-                    Idealizadores
-                </p>
+                <ul>
+                    <li>Sobre Nós</li>
+                    <li>Linha do Tempo</li>
+                    <li>Marcas</li>
+                    <li>Idealizadores</li>
+                </ul>
             </div>
-            <div class="texto4">
+            <div class="footer-col">
                 <h3>Detalhes</h3>
-                <p>Promos
-                    <br><br>
-                    Feminino
-                    <br><br>
-                    Masculino
-                    <br><br>
-                    Quentinhos
-                    <br><br>
-                    Fresquinhos
-                    <br><br>
-                    Acessórios
-                    <br><br>
-                    Marcas
-                </p>
+                <ul>
+                    <li>Promos</li>
+                    <li>Feminino</li>
+                    <li>Masculino</li>
+                    <li>Quentinhos</li>
+                    <li>Fresquinhos</li>
+                    <li>Acessórios</li>
+                    <li>Marcas</li>
+                </ul>
             </div>
-            <div class="texto5">
+            <div class="footer-col">
                 <h3>Redes Sociais</h3>
-                <p>Instagram
-                    <br><br>
-                    Facebook
-                    <br><br>
-                    Threads
-                    <br><br>
-                    Localização
-                </p>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Threads</li>
+                    <li>Localização</li>
+                </ul>
             </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bia Fashion Kids. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     </div>
 
     <script>
@@ -709,5 +702,69 @@
         });
     </script>
 </body>
-
+<style>
+    .footer-div {
+            background: #fff;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+            padding: 40px 0 0 0;
+            margin-top: 40px;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+            padding: 0 20px;
+        }
+        .footer-col {
+            flex: 1 1 180px;
+            min-width: 180px;
+            margin-bottom: 30px;
+        }
+        .footer-logo {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        .footer-col h3 {
+            font-size: 18px;
+            color: #e91e63;
+            margin-bottom: 10px;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+            color: #666;
+            font-size: 15px;
+        }
+        .footer-col a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 18px 0 10px 0;
+            background: #f5f5f5;
+            color: #999;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        @media (max-width: 900px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+            }
+            .footer-col {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+</style>
 </html>
