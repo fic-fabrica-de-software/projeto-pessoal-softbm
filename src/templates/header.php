@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bebê ao juvenil! Desde 2014🙌 - Bia Fashion Kids</title>
-    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="src/templates/style_header.css">
     <link rel="stylesheet" href="src/templates/style_footer.css">
@@ -51,25 +51,7 @@
                 </div>
 
                 <div class="header-actions">
-                    <a onclick="abrirModal()"><i class="fas fa-user"></i> Entrar</a>
-                    <!-- Modal de login -->
-                    <div id="modalOverlay" class="overlay" onclick="fecharModal()">
-                        <div class="modal" onclick="event.stopPropagation()">
-                            <?php if (isset($nome_usuarios) && !empty($nome_usuarios)): ?>
-                            <p><strong>Nome:</strong>
-                                <?php echo htmlspecialchars($nome_usuarios); ?>
-                            </p>
-                            <p><a href="../public/admin/admin.php" style="color: rgb(242, 211, 124);">Admin</a></p>
-                            <p><a href="../public/login/logout.php" style="color: rgb(242, 211, 124);">Desconectar</a>
-                            </p>
-                            <?php else: ?>
-                            <p><strong>Você ainda não está logado.</strong></p>
-                            <p><a href="../public/login/index.php" style="color: rgb(242, 211, 124);">Fazer login</a>
-                            </p>
-                            <?php endif; ?>
-                            <button onclick="fecharModal()" style="margin-top: 15px;">Fechar</button>
-                        </div>
-                    </div>
+                    <a href="login.php"><i class="fas fa-user"></i> Entrar</a>
                     <a href="#"><i class="fas fa-shopping-cart"></i> Carrinho</a>
                 </div>
 
