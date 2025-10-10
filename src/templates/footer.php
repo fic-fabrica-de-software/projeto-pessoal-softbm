@@ -28,13 +28,13 @@
         <div class="footer-col">
             <h3>Detalhes</h3>
             <ul>
-                <li><a href="pages/promo.html">Promos</a></li>
+                <li><a href="promos.php">Promos</a></li>
                 <li><a href="#">Feminino</a></li>
                 <li><a href="#">Masculino</a></li>
                 <li><a href="#">Quentinhos</a></li>
                 <li><a href="#">Fresquinhos</a></li>
                 <li><a href="#">Acessórios</a></li>
-                <li><a href="#">Marcas</a></li>
+                <li><a href="marcas.php">Marcas</a></li>
             </ul>
         </div>
         <div class="footer-col">
