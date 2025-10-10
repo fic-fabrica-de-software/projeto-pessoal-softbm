@@ -26,7 +26,7 @@
             <div class="header-content">
                 <!--Logo da loja-->
                 <div class="logo">
-                    <a href="/">
+                    <a href="Index.php">
                         <img src="src/images/98368e1a-b1a8-4dfd-bffa-786a1f87a1f4.png" alt="Bia Fashion Kids Logo">
                     </a>
                 </div>
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="header-actions">
-                    <a href="login.php"><i class="fas fa-user"></i> Entrar</a>
+                    <a href="Login.php"><i class="fas fa-user"></i> Entrar</a>
                     <a href="#"><i class="fas fa-shopping-cart"></i> Carrinho</a>
                 </div>
 

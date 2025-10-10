@@ -26,11 +26,11 @@
                     <p>Adidas</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="src/images/pampili.png">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/pampili.png">
                     <p>Pampili</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="src/images/charpey.png">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/charpey.png">
                     <p>Charpey</p>
                 </div>
             </a> <a href="">
@@ -58,25 +58,25 @@
                     <p>Infanti</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="src/images/logomolekinha.png">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/logomolekinha.png">
                     <p>Molekinha</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="src/images/molekinho.png">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/molekinho.png">
                     <p>Molekinho</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="src/images/klinlogo.jpg">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/klinlogo.jpg">
                     <p>Klin</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="src/images/milon.png">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/milon.png">
                     <p>Milon</p>
                 </div>
             </a> </div>
     </section> <!--Section de images de roupas tops-->
     <section class="product-section">
-        <div class="tshirt-sections"> <a href="modelo_produto.html">
+        <div class="tshirt-sections"> <a href="ModeloProduto.php">
                 <div class="tshirt-photos"> <img src="src/images/imgs-produto/hellokity.png">
                     <p>Sandália HELLO KITTY © Licenciado/Original</p> <span><strong>R$ 61,96</strong></span>
                 </div>
