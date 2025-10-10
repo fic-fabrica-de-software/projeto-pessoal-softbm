@@ -51,4 +51,5 @@
             </a> </div>
     </section>
 </body>
+  <?php include 'src/templates/footer.php' ?>
 </html>
