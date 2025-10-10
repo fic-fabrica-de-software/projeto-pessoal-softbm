@@ -34,7 +34,7 @@
                 <!--Seções-->
                 <nav class="sections-content">
                     <ul>
-                        <li><a href="pages/promo.html">Promos</a></li>
+                        <li><a href="promos.php">Promos</a></li>
                         <li><a href="#">Feminino</a></li>
                         <li><a href="#">Masculino</a></li>
                         <li><a href="#">Quentinhos</a></li>
