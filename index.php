@@ -82,18 +82,18 @@
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                        src="src/images/imgs-produto/fila.png">
+                    <p>Chinelo Fila Drifter Basic</p> <span><strong>R$ 135,91</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                        src="src/images/imgs-produto/flor.png">
+                    <p>Babuche Capivara em tons de marrom </p> <span><strong>R$ 84,91</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                        src="src/images/imgs-produto/rider.png">
+                    <p>Chinelo Rider © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
