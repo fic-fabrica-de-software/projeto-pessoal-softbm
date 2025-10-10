@@ -40,7 +40,7 @@
                         <li><a href="#">Quentinhos</a></li>
                         <li><a href="#">Fresquinhos</a></li>
                         <li><a href="#">Acessórios</a></li>
-                        <li><a href="#">Marcas</a></li>
+                        <li><a href="marcas.php">Marcas</a></li>
                     </ul>
                 </nav>
 
