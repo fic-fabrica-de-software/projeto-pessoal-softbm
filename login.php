@@ -12,38 +12,7 @@
         </div>
 
         <div class="form-container">  
-            <?php
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                // Captura dos dados do formulário
-                $nome_completo = $_POST['nome_completo'] ?? '';
-                $email = $_POST['email'] ?? '';
-                $data_nascimento = $_POST['data_nascimento'] ?? '';
-                $telefone = $_POST['telefone'] ?? '';
-                $cpf = $_POST['cpf'] ?? '';
-                $preferencia_moda = $_POST['preferencia_moda'] ?? '';
-                
-                // Validação básica
-                if (!empty($nome_completo) && !empty($email) && !empty($data_nascimento) && 
-                    !empty($telefone) && !empty($cpf) && !empty($preferencia_moda)) {
-                    
-                    echo '<div class="success-message">';
-                    echo '<p>✓ Cadastro realizado com sucesso!</p>';
-                    echo '<p><strong>Nome:</strong> ' . htmlspecialchars($nome_completo) . '</p>';
-                    echo '<p><strong>Email:</strong> ' . htmlspecialchars($email) . '</p>';
-                    echo '<p><strong>Data de Nascimento:</strong> ' . htmlspecialchars($data_nascimento) . '</p>';
-                    echo '<p><strong>Telefone:</strong> ' . htmlspecialchars($telefone) . '</p>';
-                    echo '<p><strong>CPF:</strong> ' . htmlspecialchars($cpf) . '</p>';
-                    echo '<p><strong>Preferência:</strong> ' . htmlspecialchars($preferencia_moda) . '</p>';
-                    echo '</div>';
-                } else {
-                    echo '<div class="error-message">';
-                    echo '<p>✗ Por favor, preencha todos os campos obrigatórios.</p>';
-                    echo '</div>';
-                }
-            }
-            ?>
-
-            <form method="POST" action="cadastro.php" class="cadastro-form">
+            <form method="POST" action="../controllers/CadastroUsuario.php" class="cadastro-form">
                 <div class="form-group">
                     <label for="nome_completo">*Nome Completo</label>
                     <input type="text" id="nome_completo" name="nome_completo" required>
@@ -91,33 +60,15 @@
                     </div>
                 </div>
 
-                <button type="submit" class="submit-button">CADASTRAR</button>
+                <div class="form-group">
+                    <label for="password">*Senha forte</label>
+                    <input type="text" id="password" name="password" placeholder="" maxlength="30" required>
+                </div>
+
+                <button type="submit" class="submit-button" name="login">CADASTRAR</button>
             </form>
         </div>
     </div>
-
-    <script>
-        // Máscara para CPF
-        document.getElementById('cpf').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length <= 11) {
-                value = value.replace(/(\d{3})(\d)/, '$1.$2');
-                value = value.replace(/(\d{3})(\d)/, '$1.$2');
-                value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
-                e.target.value = value;
-            }
-        });
-
-        // Máscara para Telefone
-        document.getElementById('telefone').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length <= 11) {
-                value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
-                value = value.replace(/(\d)(\d{4})$/, '$1-$2');
-                e.target.value = value;
-            }
-        });
-    </script>
 </body>
 <style>
     * {
