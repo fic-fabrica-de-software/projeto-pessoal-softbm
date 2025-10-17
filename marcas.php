@@ -15,7 +15,7 @@
 <section class="product-section">
         <div class="tshirt-sections"> <a href="ModeloProduto.php">
                 <div class="tshirt-photos"> <img src="src/images/charpey.png">
-                    <p>CHARPEY © Licenciado/Original</p> <span><strong>R$ 61,96</strong></span>
+                    <p>CHARPEY © Licenciado/Original</p>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
