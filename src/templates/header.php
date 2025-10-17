@@ -37,7 +37,7 @@
                         <li><a href="promos.php">Promos</a></li>
                         <li><a href="#">Feminino</a></li>
                         <li><a href="#">Masculino</a></li>
-                        <li><a href="#">Quentinhos</a></li>
+                        <li><a href="quentinhos.php">Quentinhos</a></li>
                         <li><a href="fresquinhos.php">Fresquinhos</a></li>
                         <li><a href="#">Acessórios</a></li>
                         <li><a href="marcas.php">Marcas</a></li>
