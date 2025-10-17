@@ -20,78 +20,78 @@
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/momi.jpg">
-                    <p>MOMI © Licenciado/Original</p> <span><strong>R$ 135,91</strong></span>
+                    <p>MOMI © Licenciado/Original</p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/adidas.jpg">
-                    <p>ADIDAS © Licenciado/Original</p> <span><strong>R$ 59,41</strong></span>
+                    <p>ADIDAS © Licenciado/Original</p>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/kukie.jpg">
-                    <p>KUKIÊ © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
+                    <p>KUKIÊ © Licenciado/Original </p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/infanti.JPG">
-                    <p>INFANTI © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
+                    <p>INFANTI © Licenciado/Original </p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/pimpolho.png">
-                    <p>PIMPOLHO © Licenciado/Original</p> <span><strong>R$ 84,91</strong></span>
+                    <p>PIMPOLHO © Licenciado/Original</p>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/kyly.png">
-                    <p>KYLY © Licenciado/Original</p> <span><strong>R$ 169,91</strong></span>
+                    <p>KYLY © Licenciado/Original</p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/lemon.png">
-                    <p>LEMON © Licenciado/Original </p> <span><strong>R$ 118,91</strong></span>
+                    <p>LEMON © Licenciado/Original </p> 
                 </div>
             </a> </div>
 
              <div class="tshirt-sections"> <a href="ModeloProduto.php">
                 <div class="tshirt-photos"> <img src="src/images/charpey.png">
-                    <p>CHARPEY © Licenciado/Original</p> <span><strong>R$ 61,96</strong></span>
+                    <p>CHARPEY © Licenciado/Original</p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/momi.jpg">
-                    <p>MOMI © Licenciado/Original</p> <span><strong>R$ 135,91</strong></span>
+                    <p>MOMI © Licenciado/Original</p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/adidas.jpg">
-                    <p>ADIDAS © Licenciado/Original</p> <span><strong>R$ 59,41</strong></span>
+                    <p>ADIDAS © Licenciado/Original</p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/kukie.jpg">
-                    <p>KUKIÊ © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
+                    <p>KUKIÊ © Licenciado/Original </p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/infanti.JPG">
-                    <p>INFANTI © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
+                    <p>INFANTI © Licenciado/Original </p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/pimpolho.png">
-                    <p>PIMPOLHO © Licenciado/Original</p> <span><strong>R$ 84,91</strong></span>
+                    <p>PIMPOLHO © Licenciado/Original</p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/kyly.png">
-                    <p>KYLY © Licenciado/Original</p> <span><strong>R$ 169,91</strong></span>
+                    <p>KYLY © Licenciado/Original</p> 
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
                         src="src/images/lemon.png">
-                    <p>LEMON © Licenciado/Original </p> <span><strong>R$ 118,91</strong></span>
+                    <p>LEMON © Licenciado/Original </p> 
                 </div>
             </a> </div>
     </section>
