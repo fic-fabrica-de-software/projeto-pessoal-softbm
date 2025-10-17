@@ -24,23 +24,23 @@
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos5.png">
-                    <p>Vestidos com estampa de Frutas </p> <span><strong>R$ 84,91</strong></span>
+                        src="src/images/imgs-produto/quentinhos5.png">
+                    <p>Vestido Hello Kitty e Jaqueta Jeans </p> <span><strong>R$ 118,93 || R$139,93</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos6.png">
-                    <p>Macaquinho de Futebol</p> <span><strong>R$ 84,91</strong></span>
+                        src="src/images/imgs-produto/quentinhos6.png">
+                    <p>Jaqueta Forrada e calça quentinha</p> <span><strong>R$ 125,93 || R$76,93</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos7.png">
-                    <p>Blusinhas de Frutinhas</p> <span><strong>R$ 59,41</strong></span>
+                        src="src/images/imgs-produto/quentinhos7.png">
+                    <p>Conjunto Quentinho</p> <span><strong>R$ 50,91</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos8.png">
-                    <p>Conjunto de Cachorrinhos</p> <span><strong>R$ 59,41</strong></span>
+                        src="src/images/imgs-produto/quentinhos8.png">
+                    <p>Conjunto de moletom com capuz</p> <span><strong>R$ 203,91</strong></span>
                 </div>
             </a> </div>
     </section>
