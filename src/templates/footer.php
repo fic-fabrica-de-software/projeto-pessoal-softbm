@@ -40,10 +40,10 @@
         <div class="footer-col">
             <h3>Redes Sociais</h3>
             <ul>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="https://www.instagram.com/biafashionkidsjoinville?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
                 <li><a href="#">Facebook</a></li>
-                <li><a href="#">Threads</a></li>
-                <li><a href="#">Localização</a></li>
+                <li><a href="https://www.threads.com/@biafashionkidsjoinville">Threads</a></li>
+                <li><a href="https://share.google/FyuN1r9SmFOGoQ7ox">Localização</a></li>
             </ul>
         </div>
     </div>
