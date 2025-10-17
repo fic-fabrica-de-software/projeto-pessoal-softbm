@@ -39,7 +39,7 @@
                         <li><a href="#">Masculino</a></li>
                         <li><a href="quentinhos.php">Quentinhos</a></li>
                         <li><a href="fresquinhos.php">Fresquinhos</a></li>
-                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="acessorios.php">Acessórios</a></li>
                         <li><a href="marcas.php">Marcas</a></li>
                     </ul>
                 </nav>
