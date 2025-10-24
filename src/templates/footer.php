@@ -29,7 +29,7 @@
             <h3>Detalhes</h3>
             <ul>
                 <li><a href="promos.php">Promos</a></li>
-                <li><a href="#">Feminino</a></li>
+                <li><a href="feminino.php">Feminino</a></li>
                 <li><a href="#">Masculino</a></li>
                 <li><a href="quentinhos.php">Quentinhos</a></li>
                 <li><a href="fresquinhos.php">Fresquinhos</a></li>

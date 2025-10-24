@@ -35,7 +35,7 @@
                 <nav class="sections-content">
                     <ul>
                         <li><a href="promos.php">Promos</a></li>
-                        <li><a href="#">Feminino</a></li>
+                        <li><a href="feminino.php">Feminino</a></li>
                         <li><a href="#">Masculino</a></li>
                         <li><a href="quentinhos.php">Quentinhos</a></li>
                         <li><a href="fresquinhos.php">Fresquinhos</a></li>
@@ -63,13 +63,13 @@
     </header>
     <div class="mobile-menu">
         <ul>
-            <li><a href="pages/promo.html">Promos</a></li>
-            <li><a href="#">Feminino</a></li>
+            <li><a href="promos.html">Promos</a></li>
+            <li><a href="feminino.php">Feminino</a></li>
             <li><a href="#">Masculino</a></li>
-            <li><a href="#">Quentinhos</a></li>
-            <li><a href="#">Fresquinhos</a></li>
-            <li><a href="#">Acessórios</a></li>
-            <li><a href="#">Marcas</a></li>
+            <li><a href="quentinhos.php">Quentinhos</a></li>
+            <li><a href="fresquinhos.php">Fresquinhos</a></li>
+            <li><a href="acessorios.php">Acessórios</a></li>
+            <li><a href="marcas.php">Marcas</a></li>
             <li><a href="#">Entrar</a></li>
             <li><a href="#">Carrinho</a></li>
         </ul>
