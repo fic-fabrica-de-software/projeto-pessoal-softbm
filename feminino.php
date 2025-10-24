@@ -4,43 +4,43 @@
     </section> <!--Section de images de roupas tops-->
     <section class="product-section">
         <div class="tshirt-sections"> <a href="ModeloProduto.php">
-                <div class="tshirt-photos"> <img src="src/images/imgs-produto/fresquinhos1.png">
-                    <p>Conjunto Luc.boo + Sandália BIBI </p> <span><strong>R$ 127,41 || R$ 161,41</strong></span>
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/feminino1.png">
+                    <p>Pijama Stitch + Chinelo combinando </p> <span><strong>R$ 84,91 || R$ 36,46</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos2.png">
-                    <p>Regata + Short Jeans </p> <span><strong>R$ 59,41 || R$ 110,41</strong></span>
+                        src="src/images/imgs-produto/feminino2.png">
+                    <p>Conjunto de Bermuda com Blusa de Laços + Papete</p> <span><strong>R$ 101,91 || R$ 101,91</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos3.png">
-                    <p>Camisetas NIKE © Licenciado/Original  </p> <span><strong>R$ 110,41</strong></span>
+                        src="src/images/imgs-produto/feminino3.png">
+                    <p>Conjunto com Estampa de Urso e Palmeiras </p> <span><strong>R$ 152,91</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos4.png">
-                    <p>Camisetas LEVI'S © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
+                        src="src/images/imgs-produto/feminino4.png">
+                    <p>Vestido delicado em tons de Rosa </p> <span><strong>R$ 67,91</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos5.png">
-                    <p>Vestidos com estampa de Frutas </p> <span><strong>R$ 84,91</strong></span>
+                        src="src/images/imgs-produto/feminino5.png">
+                    <p>Vestido Rosa com laços </p> <span><strong>R$ 305,91</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos6.png">
-                    <p>Macaquinho de Futebol</p> <span><strong>R$ 84,91</strong></span>
+                        src="src/images/imgs-produto/feminino6.png">
+                    <p>Vestido Brilhante e Delicado</p> <span><strong>R$ 237,91</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos7.png">
-                    <p>Blusinhas de Frutinhas</p> <span><strong>R$ 59,41</strong></span>
+                        src="src/images/imgs-produto/feminino7.png">
+                    <p>Conjunto Delicado e Confortável</p> <span><strong>R$ 161,41</strong></span>
                 </div>
             </a> <a href="">
                 <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fresquinhos8.png">
-                    <p>Conjunto de Cachorrinhos</p> <span><strong>R$ 59,41</strong></span>
+                        src="src/images/imgs-produto/feminino8.png">
+                    <p>Camisetas Diversas Toy Story</p> <span><strong>R$ 64,51 || R$ 76,41</strong></span>
                 </div>
             </a> </div>
     </section>
