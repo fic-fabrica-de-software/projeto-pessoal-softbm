@@ -39,64 +39,68 @@
             <div class="timeline-item">
 
                 <div class="marcador">
-                    <div class="M-circulo"></div>
-                    <div class="M-ano">1948</div>
-</div>
+                    </div>
                 </div>
 
             <div class="timeline-item">
 
                 <div class="marcador">
                     <div class="M-circuloE"></div>
-                    <div class="M-anoE">2024</div>
+                    <div class="M-anoE">2014</div>
                 </div>
 
                 <div class="timeline-conteudo">
-                    <h3>A</h3>
-                    <p>
+                    <h3>Inauguração </h3>
+                    <p>A loja Bia Fashion Kids inaugurou em Joinville- Santa Catarina, em 2014, no mês de Agosto, com o intuito de valorizar a Moda Infantil na cidade, 
+                        através de peças de qualidade e preços justos.
                     </p>
                     <div class="carrosel">
-                        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                             <div class="imgCarrosel">
-                                <img src="src/images/vitrine.png"
+                                <img src="src/images/vitrine3.png"
                                     alt="isabella4">
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div class="timeline-conteudo">
-                    <h3>Fortalecimento Arsenal Nuclear do Irã </h3>
-                    <p>Após uma afirmação clara de que seriam significativamente aumentados a produção de urânio
-                        enriquecido,
-                        houve um crescente receio iminente entre Israel e Irã. No mesmo período, a Força Aérea
-                        Israelense direcionou alguns ataques
-                        ao Irã, visando exemplificar seu respectivo iminente poder.
+                    <h3>Evolução </h3>
+                    <p>Após um tempo, a estrutura da loja Bia Fashion Kids aumentou, proporcionando conforto e elevando a variedade de produtos disponíveis aos clientes.
                     </p>
                     <div class="carrosel">
-                        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                             <div class="imgCarrosel"><img
                                     src="src/images/vitrine1.png"
                                     alt="isabella4"></div>
                         </div>
                     </div>
-                </div>
                 <div class="timeline-conteudo">
-                    <h3>Operação Red Wedding</h3>
-                    <p>Em meados de junho de 2025, foi realizada uma grave operação militar que tornou-se reconhecida
-                        através da nomenclatura Red Wedding. A mesma foi planejada e executada com altos níveis de
-                        precisão e inteligência estratégica,
-                        características que evidenciaram a morte de 30 comandantes da Guarda Revolucionária Islâmica,
-                        pertencente ao Irã.
+                    <h3>Dedicação</h3>
+                    <p>Mesmo em uma equipe reduzida e pouco espaço, as vitrines eram realizadas com toda dedicação, adequando-se a períodos festivos, e facilitando a visualização de modelos 
+                        disponibilizados na loja.
                     </p>
                     <div class="carrosel">
-                        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                             <div class="imgCarrosel"><img
-                                    src=""
+                                    src="src/images/vitrine.png"
+                                    alt="isabella4"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-conteudo">
+                        <div class="marcador">
+                    <div class="M-anoE">2024</div>
+                </div>
+                    <h3>Atualmente</h3>
+                    <p> A loja conta com duas salas comerciais, onde estão disponíveis peças com preço reduzido (Outlet) e peças de coleção (Loja Principal), onde existem
+                        profissionais qualificados para realizar um atendimento adequado.
+                    </p>
+                    <div class="carrosel">
+                            <div class="imgCarrosel"><img
+                                    src="src/images/vitrine4.png"
                                     alt="isabella4"></div>
 
                         </div>
                     </div>
                 </div>
+                
     </main>
     <footer>
         <div class="flex" style="justify-content: center;">
