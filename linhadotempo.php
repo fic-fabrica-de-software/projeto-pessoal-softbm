@@ -52,17 +52,13 @@
                 </div>
 
                 <div class="timeline-conteudo">
-                    <h3>200 Mísseis</h3>
-                    <p>Em outubro de 2024, como uma forma de retaliação aos assassinatos dos chefes do Hamas e ainda
-                        Hezbollah
-                        (durante bombardeios israelenses) o Irã realizou um ataque. com aproximadamente 200 mísseis
-                        direcionados especificamente
-                        ao território israelense.
+                    <h3>A</h3>
+                    <p>
                     </p>
                     <div class="carrosel">
                         <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                             <div class="imgCarrosel">
-                                <img src="https://www.cartacapital.com.br/wp-content/uploads/2024/10/Ira.jpg"
+                                <img src="src/images/vitrine.png"
                                     alt="isabella4">
                             </div>
                         </div>
@@ -79,7 +75,7 @@
                     <div class="carrosel">
                         <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                             <div class="imgCarrosel"><img
-                                    src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/11/221103155820-iran-bushehr-nuclear-power-plant-2019-restricted.jpg?w=1200&h=900&crop=1"
+                                    src="src/images/vitrine1.png"
                                     alt="isabella4"></div>
                         </div>
                     </div>
@@ -95,7 +91,7 @@
                     <div class="carrosel">
                         <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                             <div class="imgCarrosel"><img
-                                    src="https://cdn1.wionews.com/prod/wion/images/2025/20250627/image-1751039351528.png?rect=(0,0,1200,900)"
+                                    src=""
                                     alt="isabella4"></div>
 
                         </div>
