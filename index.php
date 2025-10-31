@@ -58,20 +58,20 @@
                     <p>Infanti</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/logomolekinha.png">
-                    <p>Molekinha</p>
+                <div class="carrousel-photos"> <img src="src/images/kukie.png">
+                    <p>Kukiê</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/molekinho.png">
-                    <p>Molekinho</p>
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/charpey.png">
+                    <p>Charpey</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/klinlogo.jpg">
-                    <p>Klin</p>
+                <div class="carrousel-photos"> <img src="src/images/lemon.png">
+                    <p>Lemon</p>
                 </div>
             </a> <a href="">
-                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/milon.png">
-                    <p>Milon</p>
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/pampili.png">
+                    <p>Pampili</p>
                 </div>
             </a> </div>
     </section> <!--Section de images de roupas tops-->

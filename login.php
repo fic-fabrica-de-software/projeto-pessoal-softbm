@@ -62,7 +62,7 @@
 
                 <div class="form-group">
                     <label for="password">*Senha forte</label>
-                    <input type="text" id="password" name="password" placeholder="" maxlength="30" required>
+                    <input type="password" id="password" name="password" placeholder="" maxlength="30" required>
                 </div>
 
                 <button type="submit" class="submit-button" name="login">CADASTRAR</button>
