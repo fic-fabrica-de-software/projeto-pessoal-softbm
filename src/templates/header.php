@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="src/templates/style_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="script_header.js"></script>
+    <link rel="stylesheet" href="login_popup.css">
 </head>
 
 <body>
@@ -72,5 +73,9 @@
             <li><a href="marcas.php">Marcas</a></li>
             <li><a href="#">Entrar</a></li>
             <li><a href="#">Carrinho</a></li>
-        </ul>
-    </div>
+	        </ul>
+	    </div>
+	    <!-- Incluir o HTML do Popup de Login/Cadastro -->
+	    <?php include 'login_popup.php'; ?>
+	    <script src="login_popup.js"></script>
+	
