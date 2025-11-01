@@ -1,3 +1,8 @@
+<?php
+include_once 'controllers/CadastroController.php';
+include_once 'controllers/LoginController.php';
+?>
+
 <!-- HTML do Popup de Login/Cadastro (Slide-out Menu) -->
 <div id="login-sidebar" class="login-sidebar">
     <!-- Conteúdo do Login/Cadastro Simples (Imagem 1) -->
@@ -51,7 +56,7 @@
             <div class="divider">OU</div>
 
             <h3 class="title">CADASTRO</h3>
-            <form id="register-form">
+            <form id="register-form" method="POST">
                 <div class="input-group">
                     <input type="email" id="reg-email" placeholder="*E-mail" required>
                 </div>
@@ -86,7 +91,7 @@
                 <div class="input-group">
                     <input type="password" id="reg-senha" placeholder="*Senha" required>
                 </div>
-                <div class="password-rules" style="background: #ffffff !important; margin-left:20px;" >
+                <div class="password-rules" style="background: #ffffff !important; margin-left:20px;">
                     <p>Sua senha deve ter:</p>
                     <ul>
                         <li><i class="fas fa-check"></i> Mínimo 8 caracteres com letras e números</li>
@@ -112,11 +117,11 @@
                 </div>
 
                 <!-- ReCAPTCHA Placeholder -->
-            <div class="mb-3" style="background-color: #F0F0F0;">
-                <div class="g-recaptcha" data-sitekey="6Lft5tYrAAAAAB4P6uSdIptR_pXn7fkO0HH04Xtk"></div>
-             </div>
+                <div class="mb-3" style="background-color: #F0F0F0;">
+                    <div class="g-recaptcha" data-sitekey="6Lft5tYrAAAAAB4P6uSdIptR_pXn7fkO0HH04Xtk"></div>
+                </div>
 
-                <button type="submit" class="btn btn-primary">CADASTRAR-SE</button>
+                <button type="submit" class="btn btn-primary" name="CADASTRO">CADASTRAR-SE</button>
             </form>
         </div>
     </div>
@@ -126,10 +131,10 @@
 <div id="sidebar-overlay" class="sidebar-overlay"></div>
 
 <style>
-
-    body{
+    body {
         overflow-x: none;
     }
+
     /* Estilos para o Popup de Login/Cadastro (Slide-out Menu) */
 
     /* Variáveis de cor baseadas nas imagens (tons de rosa) */
@@ -322,6 +327,7 @@
         text-decoration: none;
         margin-bottom: 20px;
     }
+
     /* Botões de Ação */
     .btn {
         width: 80%;
@@ -522,4 +528,19 @@
             }
         });
     });
+
+    document.querySelector("#register-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    formData.append('acao', 'cadastrar'); // chave para o controller
+
+    const resp = await fetch("controllers/CadastroController.php", {
+        method: "POST",
+        body: formData
+    });
+
+    const data = await resp.json();
+    alert(data.msg);
+});
 </script>
