@@ -1,11 +1,11 @@
 <!-- HTML do Popup de Login/Cadastro (Slide-out Menu) -->
 <div id="login-sidebar" class="login-sidebar">
     <!-- Conteúdo do Login/Cadastro Simples (Imagem 1) -->
-    <div id="login-content" class="sidebar-content active">
-        <div class="sidebar-header">
+    <div id="login-content" class="sidebar-content active" style="background: #ffffff !important;">
+        <div class="sidebar-header" style="background: #ffffff !important;">
             <button id="close-sidebar" class="close-btn">&times;</button>
         </div>
-        <div class="sidebar-body">
+        <div class="sidebar-body" style="background: #ffffff !important;">
             <h3 class="title">CADASTRAR COM REDE SOCIAL</h3>
             <button class="social-login-btn google-btn">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
@@ -36,11 +36,11 @@
     </div>
 
     <!-- Conteúdo do Cadastro Completo (Imagem 2) -->
-    <div id="register-content" class="sidebar-content">
+    <div id="register-content" class="sidebar-content" style="background: #ffffff !important;">
         <div class="sidebar-header">
             <button id="back-to-login" class="back-btn"><i class="fas fa-chevron-left"></i> VOLTAR</button>
         </div>
-        <div class="sidebar-body">
+        <div class="sidebar-body" style="background: #ffffff !important;">
             <h3 class="title">CADASTRAR COM REDE SOCIAL</h3>
             <button class="social-login-btn google-btn">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
@@ -65,11 +65,11 @@
                     <input type="text" id="reg-sobrenome" placeholder="*Sobrenome" required>
                 </div>
                 <div class="input-group">
-                    <label for="reg-data-nasc">Data de nascimento</label>
+                    <label for="reg-data-nasc" style="margin-left: 20px;">Data de nascimento</label>
                     <input type="date" id="reg-data-nasc">
                 </div>
 
-                <div class="preferences-group">
+                <div class="preferences-group" style="background: #e0e0e0 !important;">
                     <p>Quais são as suas preferências?</p>
                     <small>Vamos selecionar itens personalizados para você.</small>
                     <label class="radio-label">
@@ -86,7 +86,7 @@
                 <div class="input-group">
                     <input type="password" id="reg-senha" placeholder="*Senha" required>
                 </div>
-                <div class="password-rules">
+                <div class="password-rules" style="background: #ffffff !important; margin-left:20px;" >
                     <p>Sua senha deve ter:</p>
                     <ul>
                         <li><i class="fas fa-check"></i> Mínimo 8 caracteres com letras e números</li>
@@ -112,10 +112,9 @@
                 </div>
 
                 <!-- ReCAPTCHA Placeholder -->
-                <div class="recaptcha-placeholder">
-                    <p>Não sou um robô</p>
-                    <div class="recaptcha-box"></div>
-                </div>
+            <div class="mb-3" style="background-color: #F0F0F0;">
+                <div class="g-recaptcha" data-sitekey="6Lft5tYrAAAAAB4P6uSdIptR_pXn7fkO0HH04Xtk"></div>
+             </div>
 
                 <button type="submit" class="btn btn-primary">CADASTRAR-SE</button>
             </form>
@@ -127,11 +126,15 @@
 <div id="sidebar-overlay" class="sidebar-overlay"></div>
 
 <style>
+
+    body{
+        overflow-x: none;
+    }
     /* Estilos para o Popup de Login/Cadastro (Slide-out Menu) */
 
     /* Variáveis de cor baseadas nas imagens (tons de rosa) */
     :root {
-        --primary-color: #ff69b4;
+        --primary-color: #720039ff;
         /* Rosa principal (botões, destaques) */
         --secondary-color: #f0f0f0;
         /* Fundo claro */
@@ -160,19 +163,18 @@
         top: 0;
         right: 0;
         width: 100%;
-        /* Largura total em mobile */
-        max-width: 400px;
-        /* Largura máxima em desktop, como na imagem */
+        max-width: 420px;
         height: 100%;
-        background-color: white;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        background: #ffffff !important;
+        box-shadow: -4px 0 25px rgba(0, 0, 0, 0.15);
+        border-left: 1px solid #e5e5e5;
         z-index: 1000;
         transform: translateX(100%);
-        /* Escondido para a direita */
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease-in-out;
         overflow-y: auto;
-        /* Para formulários longos */
+        border-radius: 12px 0 0 12px;
     }
+
 
     /* Estado ativo (visível) */
     .login-sidebar.active {
@@ -236,7 +238,7 @@
 
     /* Botão de Login Social (Google) */
     .social-login-btn {
-        width: 100%;
+        width: 80%;
         padding: 10px;
         border: 1px solid var(--border-color);
         background-color: white;
@@ -248,6 +250,7 @@
         justify-content: center;
         gap: 10px;
         margin-bottom: 20px;
+        margin-left: 40px;
         border-radius: 4px;
     }
 
@@ -293,12 +296,13 @@
     .input-group input[type="password"],
     .input-group input[type="date"],
     .input-group input[type="tel"] {
-        width: 100%;
+        width: 90%;
         padding: 10px;
         border: 1px solid var(--border-color);
         border-radius: 4px;
         box-sizing: border-box;
         font-size: 14px;
+        margin-left: 20px;
     }
 
     .input-group label {
@@ -310,6 +314,7 @@
 
     /* Link Esqueci Senha */
     .forgot-password {
+        margin-right: 40px;
         display: block;
         text-align: right;
         font-size: 12px;
@@ -317,10 +322,9 @@
         text-decoration: none;
         margin-bottom: 20px;
     }
-
     /* Botões de Ação */
     .btn {
-        width: 100%;
+        width: 80%;
         padding: 12px;
         border: none;
         border-radius: 4px;
@@ -329,11 +333,13 @@
         text-transform: uppercase;
         margin-bottom: 10px;
         transition: background-color 0.2s ease;
+        margin-left: 40px;
     }
 
     .btn-primary {
         background-color: var(--primary-color);
         color: white;
+
     }
 
     .btn-primary:hover {
@@ -354,8 +360,10 @@
     .preferences-group {
         background-color: #f9f9f9;
         padding: 15px;
+        width: 90%;
         border-radius: 4px;
         margin-bottom: 20px;
+        margin-left: 9px;
     }
 
     .preferences-group p {
@@ -414,6 +422,7 @@
     .checkbox-group {
         margin-bottom: 20px;
         font-size: 12px;
+        margin-left: 20px;
     }
 
     .checkbox-group a {
@@ -513,5 +522,4 @@
             }
         });
     });
-
 </script>
