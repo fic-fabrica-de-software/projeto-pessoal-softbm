@@ -21,7 +21,7 @@ include_once 'controllers/LoginController.php';
             <div class="divider">OU</div>
 
             <h3 class="title">ENTRAR</h3>
-            <form id="login-form">
+            <form id="login-form" method="POST" action="/controllers/LoginController.php">
                 <div class="input-group">
                     <input type="text" id="login-email" placeholder="*E-mail ou CPF" required>
                 </div>
@@ -56,7 +56,7 @@ include_once 'controllers/LoginController.php';
             <div class="divider">OU</div>
 
             <h3 class="title">CADASTRO</h3>
-            <form id="register-form" method="POST">
+            <form id="register-form" method="POST" action="/controllers/CadastroController.php">
                 <div class="input-group">
                     <input type="email" id="reg-email" placeholder="*E-mail" required>
                 </div>
