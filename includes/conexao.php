@@ -1,7 +1,7 @@
 <?php
 $servidor = 'localhost';
 $usuario = 'root';
-$senha = ''; // senha do XAMPP padrão
+$senha = 'root'; 
 $banco = 'biafashionkids';
 $charset = 'utf8mb4';
 
