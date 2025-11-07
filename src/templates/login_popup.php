@@ -58,38 +58,38 @@ include_once 'controllers/LoginController.php';
             <h3 class="title">CADASTRO</h3>
             <form id="register-form" method="POST" action="/controllers/CadastroController.php">
                 <div class="input-group">
-                    <input type="email" id="reg-email" placeholder="*E-mail" required>
+                    <input type="email" id="reg-email" placeholder="*E-mail" name="email" required>
                 </div>
                 <div class="input-group">
-                    <input type="text" id="reg-cpf" placeholder="*CPF" required>
+                    <input type="text" id="reg-cpf" placeholder="*CPF" name="cpf" required>
                 </div>
                 <div class="input-group">
-                    <input type="text" id="reg-nome" placeholder="*Nome" required>
+                    <input type="text" id="reg-nome" placeholder="*Nome" name="nome" required>
                 </div>
                 <div class="input-group">
-                    <input type="text" id="reg-sobrenome" placeholder="*Sobrenome" required>
+                    <input type="text" id="reg-sobrenome" placeholder="*Sobrenome" name="sobrenome" required>
                 </div>
                 <div class="input-group">
                     <label for="reg-data-nasc" style="margin-left: 20px;">Data de nascimento</label>
-                    <input type="date" id="reg-data-nasc">
+                    <input type="date" id="reg-data-nasc" name="data">
                 </div>
 
                 <div class="preferences-group" style="background: #e0e0e0 !important;">
                     <p>Quais são as suas preferências?</p>
                     <small>Vamos selecionar itens personalizados para você.</small>
                     <label class="radio-label">
-                        <input type="radio" name="preferencia" value="moda-feminina"> Moda Feminina
+                        <input type="radio" name="preferencia" value="moda-feminina" name="preferencia"> Moda Feminina
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="preferencia" value="moda-masculina"> Moda Masculina
+                        <input type="radio" name="preferencia" value="moda-masculina" name="preferencia"> Moda Masculina
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="preferencia" value="nao-informar" checked> Prefiro não informar
+                        <input type="radio" name="preferencia" value="nao-informar" name="preferencia" checked> Prefiro não informar
                     </label>
                 </div>
 
                 <div class="input-group">
-                    <input type="password" id="reg-senha" placeholder="*Senha" required>
+                    <input type="password" id="reg-senha" placeholder="*Senha" name="password" required>
                 </div>
                 <div class="password-rules" style="background: #ffffff !important; margin-left:20px;">
                     <p>Sua senha deve ter:</p>
@@ -105,7 +105,7 @@ include_once 'controllers/LoginController.php';
                 </div>
 
                 <div class="input-group">
-                    <input type="tel" id="reg-telefone" placeholder="*Telefone" required>
+                    <input type="tel" id="reg-telefone" placeholder="*Telefone" name="telefone" required>
                 </div>
 
                 <div class="checkbox-group">
@@ -345,6 +345,8 @@ include_once 'controllers/LoginController.php';
     .btn-primary {
         background-color: var(--primary-color);
         color: white;
+        position: relative;
+    z-index: 10;
 
     }
 
