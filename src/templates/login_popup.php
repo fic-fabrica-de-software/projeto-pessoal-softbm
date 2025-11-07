@@ -139,7 +139,7 @@ include_once 'controllers/LoginController.php';
 
     /* Variáveis de cor baseadas nas imagens (tons de rosa) */
     :root {
-        --primary-color: #720039ff;
+        --primary-color:rgb(28, 5, 156);
         /* Rosa principal (botões, destaques) */
         --secondary-color: #f0f0f0;
         /* Fundo claro */
