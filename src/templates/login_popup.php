@@ -1,6 +1,36 @@
 <?php
-include_once 'controllers/CadastroController.php';
-include_once 'controllers/LoginController.php';
+
+$error = "";
+
+// Se veio erro direto da sessão
+if (!empty($_SESSION["error"])) {
+    $error = $_SESSION["error"];
+    unset($_SESSION["error"]);
+}
+
+// Se veio erro por ação POST
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["acao"])) {
+    $acoes = [
+        "login"           => "Erro ao fazer login.",
+        "register"        => "Erro ao fazer cadastro.",
+        "forgot_password" => "Erro ao recuperar senha.",
+        "reset_password"  => "Erro ao redefinir senha.",
+        "change_password" => "Erro ao alterar senha.",
+        "delete_account"  => "Erro ao excluir conta.",
+        "update_account"  => "Erro ao atualizar conta."
+    ];
+
+    $acao = $_POST["acao"];
+
+    if (isset($acoes[$acao])) {
+        $error = $acoes[$acao];
+    }
+}
+
+if (!empty($error)) {
+    echo "<script>alert('" . addslashes($error) . "');</script>";
+}
+
 ?>
 
 <!-- HTML do Popup de Login/Cadastro (Slide-out Menu) -->
@@ -21,22 +51,31 @@ include_once 'controllers/LoginController.php';
             <div class="divider">OU</div>
 
             <h3 class="title">ENTRAR</h3>
-            <form id="login-form" method="POST" action="/controllers/LoginController.php">
+            <form id="login-form" method="POST" action="/projeto-pessoal-softbm/controllers/LoginController.php">
+                <?php if (isset($error) && $error): ?>
+                    <div class="error-message" style="color: red; margin-left: 20px;"><?php echo addslashes($error); ?></div>
+                <?php endif; ?>
                 <div class="input-group">
-                    <input type="text" id="login-email" placeholder="*E-mail ou CPF" required>
+                    <input type="text" id="login-email" name="email" placeholder="*E-mail ou CPF" required>
                 </div>
+
                 <div class="input-group">
-                    <input type="password" id="login-senha" placeholder="*Senha" required>
+                    <input type="password" id="login-senha" name="senha" placeholder="*Senha" required>
                 </div>
+
                 <a href="#" class="forgot-password">Esqueci minha senha</a>
 
-                <button type="submit" class="btn btn-primary">ENTRAR</button>
+                <button type="submit" class="btn btn-primary" name="acao" value="login">
+                    ENTRAR
+                </button>
             </form>
+
 
             <div class="divider">OU</div>
 
             <h3 class="title">PRIMEIRO ACESSO?</h3>
             <button id="show-register-form" class="btn btn-secondary">QUERO ME CADASTRAR</button>
+            <a href="/projeto-pessoal-softbm/controllers/Logout.php"><button id="show-register-form" class="btn btn-primary" style="background-color: red;">LOGOUT</button></a>
         </div>
     </div>
 
@@ -56,7 +95,7 @@ include_once 'controllers/LoginController.php';
             <div class="divider">OU</div>
 
             <h3 class="title">CADASTRO</h3>
-            <form id="register-form" method="POST" action="/controllers/CadastroController.php">
+            <form id="register-form" method="POST" action="/projeto-pessoal-softbm/controllers/CadastroController.php">
                 <div class="input-group">
                     <input type="email" id="reg-email" placeholder="*E-mail" name="email" required>
                 </div>
@@ -78,13 +117,13 @@ include_once 'controllers/LoginController.php';
                     <p>Quais são as suas preferências?</p>
                     <small>Vamos selecionar itens personalizados para você.</small>
                     <label class="radio-label">
-                        <input type="radio" name="preferencia" value="moda-feminina" name="preferencia"> Moda Feminina
+                        <input type="radio" name="preferencia" value="moda-feminina"> Moda Feminina
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="preferencia" value="moda-masculina" name="preferencia"> Moda Masculina
+                        <input type="radio" name="preferencia" value="moda-masculina"> Moda Masculina
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="preferencia" value="nao-informar" name="preferencia" checked> Prefiro não informar
+                        <input type="radio" name="preferencia" value="nao-informar" checked> Prefiro não informar
                     </label>
                 </div>
 
@@ -139,7 +178,7 @@ include_once 'controllers/LoginController.php';
 
     /* Variáveis de cor baseadas nas imagens (tons de rosa) */
     :root {
-        --primary-color:rgb(28, 5, 156);
+        --primary-color: rgb(28, 5, 156);
         /* Rosa principal (botões, destaques) */
         --secondary-color: #f0f0f0;
         /* Fundo claro */
@@ -346,7 +385,7 @@ include_once 'controllers/LoginController.php';
         background-color: var(--primary-color);
         color: white;
         position: relative;
-    z-index: 10;
+        z-index: 10;
 
     }
 
@@ -530,19 +569,4 @@ include_once 'controllers/LoginController.php';
             }
         });
     });
-
-    document.querySelector("#register-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(e.target);
-    formData.append('acao', 'cadastrar'); // chave para o controller
-
-    const resp = await fetch("controllers/CadastroController.php", {
-        method: "POST",
-        body: formData
-    });
-
-    const data = await resp.json();
-    alert(data.msg);
-});
 </script>

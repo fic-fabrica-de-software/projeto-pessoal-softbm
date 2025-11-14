@@ -10,11 +10,8 @@
                 <div class="numbertext">2 / 3</div> <img src="src/images/entrega_banner.png" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div> <img
-                    src="https://jdsportsblog.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/09/Desktop_Middle_Banner_1704x740-1920x840.jpg"
-                    style="width:100%">
-            </div> <!-- Next and previous buttons --> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
-                class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="numbertext">3 / 3</div> <img src="src/images/Banner biafashionkids.png" style="width:100%">
+            </div> <!-- Next and previous buttons --> 
         </div> <br> <!-- The dots/circles -->
         <div class="dots-container"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot"
                 onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div>
@@ -81,38 +78,31 @@
                     <p>Sandália HELLO KITTY © Licenciado/Original</p> <span><strong>R$ 61,96</strong></span>
                 </div>
             </a> <a href="">
-                <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/fila.png">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/fila.png">
                     <p>Chinelo Fila Drifter Basic</p> <span><strong>R$ 135,91</strong></span>
                 </div>
             </a> <a href="">
-                <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/flor.png">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/flor.png">
                     <p>Babuche Capivara em tons de marrom </p> <span><strong>R$ 59,41</strong></span>
                 </div>
             </a> <a href="">
-                <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/rider.png">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/rider.png">
                     <p>Chinelo Rider © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
                 </div>
             </a> <a href="">
-                <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/klin.png">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/klin.png">
                     <p>Tênis Klin © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
                 </div>
             </a> <a href="">
-                <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/capivara.png">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/capivara.png">
                     <p>Babuche Capivaras</p> <span><strong>R$ 84,91</strong></span>
                 </div>
             </a> <a href="">
-                <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/mormaii.png">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/mormaii.png">
                     <p>Tênis Mormaii© Licenciado/Original</p> <span><strong>R$ 169,91</strong></span>
                 </div>
             </a> <a href="">
-                <div class="tshirt-photos"> <img
-                        src="src/images/imgs-produto/minisuacia.png">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/minisuacia.png">
                     <p>Tênis delicado com flores </p> <span><strong>R$ 118,91</strong></span>
                 </div>
             </a> </div>

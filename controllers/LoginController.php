@@ -1,33 +1,39 @@
 <?php
 require_once(__DIR__ . '/../includes/conexao.php');
-session_start();
 
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["acao"])) {
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['acao'] ?? '') === 'login') {
-    $email = trim($_POST['email']);
-    $senha = $_POST['senha'];
+    $email = trim($_POST["email"] ?? "");
+    $password = trim($_POST["senha"] ?? "");
 
-    try {
-        $sql = $pdo->prepare("SELECT * FROM usuarios WHERE email = :email");
-        $sql->execute(['email' => $email]);
+    $stmt = $conn->prepare("SELECT * FROM usuarios WHERE email = ? OR cpf = ?");
+    $stmt->bind_param("ss", $email, $email);
+    $stmt->execute();
+    $resultado = $stmt->get_result();
 
-        if ($sql->rowCount() === 0) {
-            echo json_encode(['status' => 'erro', 'msg' => 'E-mail não encontrado.']);
+    if ($resultado->num_rows === 1) {
+        $user = $resultado->fetch_assoc();
+
+        if (password_verify($password, $user['senha'])) {
+
+            $_SESSION["email"] = $user['email'];
+            $_SESSION["name"] = $user['nome'];
+
+            echo "<script>
+                    alert('Logado com sucesso!');
+                    window.location.href='../index.php';
+                  </script>";
+            exit;
+
+        } else {
+            $_SESSION["error"] = "Senha incorreta.";
+            header('Location: ../src/templates/login_popup.php');
             exit;
         }
-
-        $user = $sql->fetch(PDO::FETCH_ASSOC);
-
-        if (password_verify($senha, $user['senha'])) {
-            $_SESSION['usuario_id'] = $user['idusuarios'];
-            $_SESSION['usuario_nome'] = $user['nome'];
-            echo json_encode(['status' => 'sucesso', 'msg' => 'Login realizado com sucesso!']);
-        } else {
-            echo json_encode(['status' => 'erro', 'msg' => 'Senha incorreta.']);
-        }
-    } catch (PDOException $e) {
-        echo json_encode(['status' => 'erro', 'msg' => 'Erro no servidor: ' . $e->getMessage()]);
+    } else {
+        $_SESSION["error"] = "Usuário não encontrado.";
+        header('Location: ../src/templates/login_popup.php');
+        exit;
     }
-    exit;
 }
 ?>
