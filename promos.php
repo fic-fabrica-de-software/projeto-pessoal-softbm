@@ -10,35 +10,26 @@
 </head>
 <body>
      <section class="product-section">
-        <div class="tshirt-sections"> <a href="" onclick="return confirm('')"> 
-            <span class="material-symbols-outlined">
-add
-</span>
+        <div class="tshirt-sections"> <a href="ModeloProduto.php"> 
+         
                 <div class="tshirt-photos"> <img src="src/images/imgs-produto/hellokity.png"> 
                     <p>Sandália HELLO KITTY © Licenciado/Original</p> <span><strong>R$ 61,96</strong></span>
                     
                 </div> 
-            </a>  <a href="" onclick="return confirm('')"> 
-            <span class="material-symbols-outlined">
-add
-</span>
+            </a>  <a href="ModeloProduto.php"> 
+
                 <div class="tshirt-photos"> <img
                         src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
                     
                 </div>
-            </a> <a href="" onclick="return confirm('')"> 
-            <span class="material-symbols-outlined">
-add
-</span>
+            </a> <a href="ModeloProduto.php">
+          
                 <div class="tshirt-photos"> <img
                         src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
                 </div>
-            </a> <a href="" onclick="return confirm('')"> 
-            <span class="material-symbols-outlined">
-add
-</span>
+            </a> <a href="ModeloProduto.php">
                 <div class="tshirt-photos"> <img
                         src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
