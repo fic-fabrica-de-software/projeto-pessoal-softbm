@@ -26,8 +26,22 @@
             <input type = button value = "Acompanhar">
 </a>
 
+<a href = sair.php>
+            <input type = button value = "Sair">
+</a>
 </body>
 </html>
 
 
 <?php include 'src/templates/footer.php'; ?>
+
+<style>
+    h2{
+        text-align: center;
+
+    }
+
+     h4{
+        text-align: center;
+
+    }
