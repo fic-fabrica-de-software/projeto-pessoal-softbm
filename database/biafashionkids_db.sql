@@ -30,13 +30,15 @@ CREATE TABLE IF NOT EXISTS `marcas` (
 );
 
 CREATE TABLE IF NOT EXISTS `produtos` (
-  idprodutos INT AUTO_INCREMENT PRIMARY KEY,
+  idprodutos INT PRIMARY KEY, /*COLOCAR O IDPRODUTO QUE JA TEM CADASTRADO NA ACERVO DA LOJA BFK*/
   idmarcas INT,
-  nome VARCHAR(80) NOT NULL,
+  nome VARCHAR(80) NOT NULL, /*NOME*/
   descricao TEXT,
-  tamanho VARCHAR(10),
+  tamanho VARCHAR(10), /*TAMANHOS*/
   preco DECIMAL(10,2),
+  avaliacao DECIMAL(10,2),
   estoque INT DEFAULT 0,
+  cor VARCHAR(80) NOT NULL,
   imagem VARCHAR(255),
   FOREIGN KEY (idmarcas) REFERENCES marcas(idmarcas)
 );
