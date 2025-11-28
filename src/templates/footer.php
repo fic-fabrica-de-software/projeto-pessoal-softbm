@@ -19,7 +19,7 @@
         <div class="footer-col">
             <h3>Companhia</h3>
             <ul>
-                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="sobrenos.php">Sobre Nós</a></li>
                 <li><a href="linhadotempo.php">Linha do Tempo</a></li>
                 <li><a href="marcas.php">Marcas</a></li>
             </ul>

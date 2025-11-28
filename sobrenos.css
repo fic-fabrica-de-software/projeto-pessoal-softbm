@@ -1,0 +1,14 @@
+p{
+    text-align: center;
+}
+
+.sobre{
+ background-color: white;
+ color: #ec6b9f;
+ width: 50%;
+ border-radius: 3px;
+ position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
