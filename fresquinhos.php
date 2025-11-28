@@ -3,7 +3,7 @@
 <main>
     </section> <!--Section de images de roupas tops-->
     <section class="product-section">
-        <div class="tshirt-sections"> <a href="ModeloProduto.php">
+        <div class="tshirt-sections"> 
                 <div class="tshirt-photos"> <img src="src/images/imgs-produto/fresquinhos1.png">
                     <p>Conjunto Luc.boo + Sandália BIBI </p> <span><strong>R$ 127,41 || R$ 161,41</strong></span>
                 </div>

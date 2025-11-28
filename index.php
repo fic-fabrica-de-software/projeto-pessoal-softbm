@@ -233,8 +233,8 @@
     }
 
     .size-option.selected {
-        background-color: #333333;
-        color: white;
+        background-color:  #4a90e2;
+        color: #333333  ;
         border-color: #333333;
     }
 
@@ -266,13 +266,13 @@
     }
 
     .btn-secondary {
-        background-color: white;
-        color: #ec6b9f;
-        border: 2px solid #ec6b9f;
+        background-color: #4a90e2;
+        color: white;
+        border: 2px solid #4a90e2;
     }
 
     .btn-secondary:hover {
-        background-color: #fce4ec;
+        background-color:rgb(135, 173, 216);
     }
 
     /* ===== RELATED PRODUCTS ===== */
@@ -524,9 +524,6 @@
                     <label class="section-label">Cor</label>
                     <div class="color-options">
                         <button class="color-option color-pink selected" onclick="selectColor(this)" data-color="Rosa" title="Rosa"></button>
-                        <button class="color-option color-black" onclick="selectColor(this)" data-color="Preto" title="Preto"></button>
-                        <button class="color-option color-white" onclick="selectColor(this)" data-color="Branco" title="Branco"></button>
-                        <button class="color-option color-gray" onclick="selectColor(this)" data-color="Cinza" title="Cinza"></button>
                     </div>
                 </div>
 
@@ -637,7 +634,7 @@
         const selectedSize = document.querySelector('.size-option.selected')?.textContent;
 
         if (!selectedColor || !selectedSize) {
-            alert('Por favor, selecione uma cor e um tamanho!');
+            alert('Selecione uma cor e um tamanho válidos.');
             return;
         }
 
