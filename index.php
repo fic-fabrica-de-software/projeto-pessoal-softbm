@@ -1,3 +1,4 @@
+
 <?php include 'src/templates/header.php'; ?>
 <link rel="stylesheet" href="src/templates/style_index.css">
 
@@ -382,7 +383,7 @@
                 <div class="numbertext">1 / 3</div> <img src="src/images/Banner01.png" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div> <img src="src/images/entrega_banner.png" style="width:100%">
+                <div class="numbertext">2 / 3</div> <img src="src/images/banner03.png" style="width:100%">
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div> <img src="src/images/Banner biafashionkids.png" style="width:100%">
