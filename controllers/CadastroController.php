@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($stmt->execute()) {
                 $_SESSION["email"] = $email;
                 $_SESSION["name"] = $nome;
-                header('Location: index.php');
+                header('Location: /index.php');
                 exit;
             } else {
                 $error = "Erro ao cadastrar. Tente novamente.";

@@ -86,9 +86,9 @@ CREATE TABLE IF NOT EXISTS `venda_produto` (
   FOREIGN KEY (idproduto) REFERENCES produtos(idprodutos)
 );
 
-CREATE TABLE IF NOT EXISTS 'admin'(
+CREATE TABLE IF NOT EXISTS `admin`(
   idadmin INT AUTO_INCREMENT PRIMARY KEY,
   nome_admin VARCHAR(87),
-  email_admin (255),
-  senha_admin (45)
+  email_admin VARCHAR(255),
+  senha_admin VARCHAR(45)
 );
