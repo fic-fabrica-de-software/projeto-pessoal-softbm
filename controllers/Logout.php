@@ -5,16 +5,18 @@ require_once(__DIR__ . '/../includes/conexao.php');
 session_start();
 if (isset($_SESSION["email"])) {
     session_destroy();
-    echo "<h2>Você saiu com sucesso!</h2>";
-    echo '>';
+    echo "";
 } else {
-    echo "<h2>Você não está logado.</h2>";
-    echo '<a href="../index.php">Clique aqui para fazer login.</a>';
+    echo "";
 }
 if (isset($_POST['logout'])) {
-    session_destroy();
+    unset($_SESSION["email"]);
     header('Location: index.php');
-    exit;
+    echo '<script>
+            setTimeout(function() {
+            window.location.href = "index.php";
+            }, 5000);
+        </script>';
 }
 ?>
 
@@ -30,10 +32,30 @@ if (isset($_POST['logout'])) {
         crossorigin="anonymous"></script>
     <title>Bebê ao juvenil! Desde 2014🙌 - Bia Fashion Kids</title>
 </head>
-
 <body>
-
+    <img class="logo" src="../src/images/logo_bfk.JPG" alt="">
 </body>
 
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+
+    .logo {
+        width: 310px;
+        animation: none;
+        margin-bottom: 20px;
+    }
+</style>
 
 </html>
+<script>
+    setTimeout(function() {
+        window.location.href = "../index.php";
+    }, 3000);
+</script>
