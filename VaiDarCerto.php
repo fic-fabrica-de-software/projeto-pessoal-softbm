@@ -1,0 +1,111 @@
+<?php include 'src/templates/header.php'; ?>
+<link rel="stylesheet" href="src/templates/style_index.css">
+<main>
+    <section> <!--Carrousel-->
+        <div class="slideshow-container"> <!-- 1920x840 Resolução-->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div> <img src="src/images/Banner01.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div> <img src="src/images/entrega_banner.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div> <img src="src/images/Banner biafashionkids.png" style="width:100%">
+            </div> <!-- Next and previous buttons --> 
+        </div> <br> <!-- The dots/circles -->
+        <div class="dots-container"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot"
+                onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div>
+    </section> <!--Carrousel mini-->
+    <section class="mini-carousel-section">
+        <div class="carrousel-sections"> <a href="">
+                <div class="carrousel-photos"> <img
+                        src="https://static.vecteezy.com/system/resources/previews/010/994/276/original/adidas-logo-symbol-clothes-design-icon-abstract-football-illustration-free-vector.jpg">
+                    <p>Adidas</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/pampili.png">
+                    <p>Pampili</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/charpey.png">
+                    <p>Charpey</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="src/images/pimpolho.png">
+                    <p>Pimpolho</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="src/images/kyly.png">
+                    <p>Kyly</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="src/images/momi-circulo.png">
+                    <p>Momi</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="src/images/lemon.png">
+                    <p>Lemon</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="src/images/kukie.png">
+                    <p>Kukiê</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="src/images/infantin.png">
+                    <p>Infanti</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="src/images/kukie.png">
+                    <p>Kukiê</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/charpey.png">
+                    <p>Charpey</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="src/images/lemon.png">
+                    <p>Lemon</p>
+                </div>
+            </a> <a href="">
+                <div class="carrousel-photos"> <img src="/projeto-pessoal-softbm/src/images/pampili.png">
+                    <p>Pampili</p>
+                </div>
+            </a> </div>
+    </section> <!--Section de images de roupas tops-->
+    <section class="product-section">
+        <div class="tshirt-sections"> <a href="ModeloProduto.php">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/hellokity.png">
+                    <p>Sandália HELLO KITTY © Licenciado/Original</p> <span><strong>R$ 61,96</strong></span>
+                </div>
+            </a> <a href="">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/fila.png">
+                    <p>Chinelo Fila Drifter Basic</p> <span><strong>R$ 135,91</strong></span>
+                </div>
+            </a> <a href="">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/flor.png">
+                    <p>Babuche Capivara em tons de marrom </p> <span><strong>R$ 59,41</strong></span>
+                </div>
+            </a> <a href="">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/rider.png">
+                    <p>Chinelo Rider © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
+                </div>
+            </a> <a href="">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/klin.png">
+                    <p>Tênis Klin © Licenciado/Original </p> <span><strong>R$ 110,41</strong></span>
+                </div>
+            </a> <a href="">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/capivara.png">
+                    <p>Babuche Capivaras</p> <span><strong>R$ 84,91</strong></span>
+                </div>
+            </a> <a href="">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/mormaii.png">
+                    <p>Tênis Mormaii© Licenciado/Original</p> <span><strong>R$ 169,91</strong></span>
+                </div>
+            </a> <a href="">
+                <div class="tshirt-photos"> <img src="src/images/imgs-produto/minisuacia.png">
+                    <p>Tênis delicado com flores </p> <span><strong>R$ 118,91</strong></span>
+                </div>
+            </a> </div>
+    </section>
+</main>
+<?php include 'src/templates/footer.php'; ?>
