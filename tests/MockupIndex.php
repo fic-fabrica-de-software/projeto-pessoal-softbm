@@ -768,7 +768,6 @@
                 <!-- Product Image -->
                 <div class="modal-image">
                     <div class="product-image-placeholder">
-                        [Imagem do Produto]
                     </div>
                 </div>
 
