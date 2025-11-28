@@ -20,53 +20,45 @@
 
                 <div class="tshirt-photos"> <img
                         src="src/images/imgs-produto/feminino4.png">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                       <p>Vestido delicado em tons de Rosa </p> <span><strong>R$ 67,91</strong></span>
                     
                 </div>
             </a> <a href="ModeloProduto.php">
           
                 <div class="tshirt-photos"> <img
                         src="src/images/imgs-produto/quentinhos1.png">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                      <p>Conjunto Blusão e Calça Moletom </p> <span><strong>R$ 62,93 || R$ 48,93</strong></span>
                 </div>
             </a> <a href="ModeloProduto.php">
                 <div class="tshirt-photos"> <img
                         src="src/images/imgs-produto/acessorios2.png">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                   <p>Laços Edição Volta ás Aulas </p>
                 </div>
-            </a> <a href="" onclick="return confirm('')"> 
-            <span class="material-symbols-outlined">
-add
-</span>
+            </a><a href="ModeloProduto.php">
+           
                 <div class="tshirt-photos"> <img
                         src="src/images/imgs-produto/fresquinhos3.png">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                    <p>Camisetas NIKE © Licenciado/Original  </p> <span><strong>R$ 110,41</strong></span>
                 </div>
-            </a> <a href="" onclick="return confirm('')"> 
-            <span class="material-symbols-outlined">
-add
-</span>
+            </a> <a href="ModeloProduto.php">
+           
                 <div class="tshirt-photos"> <img
                         src="src/images/imgs-produto/feminino1.png">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                    <p>Pijama Stitch + Chinelo combinando </p> <span><strong>R$ 84,91 || R$ 36,46</strong></span>
                 </div>
-            </a> <a href="" onclick="return confirm('')"> 
-            <span class="material-symbols-outlined">
-add
-</span>
+            </a><a href="ModeloProduto.php">
+           
                 <div class="tshirt-photos"> <img
                         src="src/images/imgs-produto/quentinhos6.png">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                  <p>Jaqueta Forrada e calça quentinha</p> <span><strong>R$ 125,93 || R$76,93</strong></span>
                 </div>
-            </a> <a href="" onclick="return confirm('')"> 
-            <span class="material-symbols-outlined">
-add
-</span>
+            </a> <a href="ModeloProduto.php">
+            
                 <div class="tshirt-photos"> <img
                         src="src/images/imgs-produto/acessorios5.png">
-                    <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
+                   <p>Sapato/Meia com LED </p>
                 </div>
-            </a> </div>
+            </a> <a href="ModeloProduto.php"> </div>
     </section>
 </body>
   <?php include 'src/templates/footer.php' ?>
