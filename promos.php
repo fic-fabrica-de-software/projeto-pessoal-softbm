@@ -19,19 +19,19 @@
             </a>  <a href="ModeloProduto.php"> 
 
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
+                        src="src/images/imgs-produto/feminino4.png">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
                     
                 </div>
             </a> <a href="ModeloProduto.php">
           
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
+                        src="src/images/imgs-produto/quentinhos1.png">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
                 </div>
             </a> <a href="ModeloProduto.php">
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
+                        src="src/images/imgs-produto/acessorios2.png">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
                 </div>
             </a> <a href="" onclick="return confirm('')"> 
@@ -39,7 +39,7 @@
 add
 </span>
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
+                        src="src/images/imgs-produto/fresquinhos3.png">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
                 </div>
             </a> <a href="" onclick="return confirm('')"> 
@@ -47,7 +47,7 @@ add
 add
 </span>
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
+                        src="src/images/imgs-produto/feminino1.png">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
                 </div>
             </a> <a href="" onclick="return confirm('')"> 
@@ -55,7 +55,7 @@ add
 add
 </span>
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
+                        src="src/images/imgs-produto/quentinhos6.png">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
                 </div>
             </a> <a href="" onclick="return confirm('')"> 
@@ -63,7 +63,7 @@ add
 add
 </span>
                 <div class="tshirt-photos"> <img
-                        src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_preto_1021_1_4a739bf8de5955b412d3e004aa92dd20.jpg">
+                        src="src/images/imgs-produto/acessorios5.png">
                     <p>Camiseta Comfort Adidas em Algodão Preta</p> <span><strong>R$ 79,90</strong></span>
                 </div>
             </a> </div>
