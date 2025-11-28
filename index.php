@@ -549,39 +549,7 @@
             </div>
         </div>
 
-        <!-- Related Products -->
-        <div class="related-products" style="padding: 32px;">
-            <h3 class="related-title">OS MAIS VENDIDOS COM BASE NO SEU INTERESSE</h3>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-card-image">
-                        [Produto 1]
-                    </div>
-                    <p class="product-card-name">Sandália infantil tipo CROCS rosa</p>
-                    <p class="product-card-price">De: <span style="text-decoration: line-through;">R$ 99,00</span></p>
-                    <p class="product-card-price-current">R$ 79,00</p>
-                    <button class="btn-small" onclick="addToCart()">ADICIONAR AO CARRINHO</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-card-image">
-                        [Produto 2]
-                    </div>
-                    <p class="product-card-name">Sandália infantil tipo CROCS azul</p>
-                    <p class="product-card-price">De: <span style="text-decoration: line-through;">R$ 99,00</span></p>
-                    <p class="product-card-price-current">R$ 79,00</p>
-                    <button class="btn-small" onclick="addToCart()">ADICIONAR AO CARRINHO</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-card-image">
-                        [Produto 3]
-                    </div>
-                    <p class="product-card-name">Sandália infantil tipo CROCS roxo</p>
-                    <p class="product-card-price">De: <span style="text-decoration: line-through;">R$ 99,00</span></p>
-                    <p class="product-card-price-current">R$ 79,00</p>
-                    <button class="btn-small" onclick="addToCart()">ADICIONAR AO CARRINHO</button>
-                </div>
-            </div>
-        </div>
+       
     </div>
 </div>
 
