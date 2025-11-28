@@ -1,16 +1,15 @@
 <?php
-/**
- * Página de Listagem de Produtos
- * Tela: Estoque > Início
- * Exibe tabela com todos os produtos em estoque
- */
+include '../includes/conexao.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Listagem de Produtos - Bia Fashion Kids</title>
+    <link rel="stylesheet" href="src/templates/style_index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -229,14 +228,10 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Barra de Notificação -->
-    <div class="notification-bar">
-        Aceitamos pagamento via <span class="pix-icon"></span> pix | Compre parcelado e sem juros!
-    </div>
 
-    <!-- Header (Incluído via include) -->
-    <!-- <?php include 'header.php'; ?> -->
 
     <!-- Navegação Azul -->
     <div class="nav-blue">
@@ -280,14 +275,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1245532521</td>
-                            <td>Camiseta Preta Adidas</td>
-                            <td>100% Poliéster</td>
+                            <td>1000000001</td>
+                            <td>Sandália HELLO KITTY © Licenciado/Original</td>
+                            <td>Sandália Infantil Licenciada/Original</td>
                             <td><span class="badge-status">Em estoque</span></td>
-                            <td>Adidas</td>
+                            <td>Hello Kitty</td>
                             <td>15</td>
                             <td>
-                                <a href="visualizar_produto.php?id=1245532521" class="action-icon" title="Visualizar">
+                                <a href="visualizar_produto.php?id=1000000001" class="action-icon" title="Visualizar">
                                     <i class="fas fa-edit"></i>
                                 </a>
                             </td>
@@ -421,7 +416,7 @@
         document.getElementById('searchInput').addEventListener('keyup', function() {
             const searchTerm = this.value.toLowerCase();
             const tableRows = document.querySelectorAll('.table tbody tr');
-            
+
             tableRows.forEach(row => {
                 const text = row.textContent.toLowerCase();
                 row.style.display = text.includes(searchTerm) ? '' : 'none';
@@ -429,4 +424,6 @@
         });
     </script>
 </body>
+<?php include '../src/templates/footer.php'; ?>
+
 </html>
