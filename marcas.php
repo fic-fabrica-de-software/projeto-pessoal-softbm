@@ -13,7 +13,7 @@
 </body>
 </html>
 <section class="product-section">
-        <div class="tshirt-sections"> <a href="ModeloProduto.php">
+        <div class="tshirt-sections"> 
                 <div class="tshirt-photos"> <img src="src/images/charpey.png">
                     <p>CHARPEY © Licenciado/Original</p>
                 </div>

@@ -3,7 +3,7 @@
 <main>
     </section> <!--Section de images de roupas tops-->
     <section class="product-section">
-        <div class="tshirt-sections"> <a href="ModeloProduto.php">
+        <div class="tshirt-sections"> 
                 <div class="tshirt-photos"> <img src="src/images/imgs-produto/feminino1.png">
                     <p>Pijama Stitch + Chinelo combinando </p> <span><strong>R$ 84,91 || R$ 36,46</strong></span>
                 </div>

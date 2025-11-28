@@ -3,7 +3,7 @@
 <main>
     </section> <!--Section de images de roupas tops-->
     <section class="product-section">
-        <div class="tshirt-sections"> <a href="ModeloProduto.php">
+        <div class="tshirt-sections"> 
                 <div class="tshirt-photos"> <img src="src/images/imgs-produto/quentinhos1.png">
                     <p>Conjunto Blusão e Calça Moletom </p> <span><strong>R$ 62,93 || R$ 48,93</strong></span>
                 </div>

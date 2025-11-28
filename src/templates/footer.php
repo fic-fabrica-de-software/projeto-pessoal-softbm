@@ -22,7 +22,6 @@
                 <li><a href="#">Sobre Nós</a></li>
                 <li><a href="linhadotempo.php">Linha do Tempo</a></li>
                 <li><a href="marcas.php">Marcas</a></li>
-                <li><a href="idealizadores.php">Idealizadores</a></li>
             </ul>
         </div>
         <div class="footer-col">
